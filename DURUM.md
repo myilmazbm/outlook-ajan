@@ -172,6 +172,33 @@
 
 ## Sıradaki adım
 
+> ### ⚠️ ÖNCE BUNU OKU — lab sunucusu yeniden kuruluyor (2026-11-19)
+>
+> Eski lab sunucusunun deneme süresi doldu; proje **yeni kurulan bir sunucuya GitHub'dan indirilecek.**
+> Bu depo **arındırılmış kopyadır**: sunucu adları yer tutucudur, sırlar ve `node_modules` yoktur.
+> Aşağıdaki "Tamamlanan" ölçümleri **eski sunucuya aittir** — yeni sunucuda yeniden doğrulanmadan geçerli sayılmaz (§14.1).
+>
+> **Yeni oturumun ilk işi — ortamı yeniden kurmak:**
+>
+> 1. **Ortamı ölç, varsayma:** sunucu adı, etki alanı, Exchange sürümü, `Get-ExchangeServer` (K11: prod bu forest'ta olmamalı).
+>    "Ortam gerçekleri" tablosunu yeni değerlerle güncelle
+> 2. **Araçlar:** .NET 8 SDK, Node.js 24, `tools/owa-probe` içinde `npm install` + `npx playwright install chromium`
+> 3. **Yer tutucuları gerçek değerlerle değiştir** (`mail.example.local`, `example.local`, `EXCH01`, sıfırlı parmak izi):
+>    `config/sunucu.lab.json` · `config/auth.lab.json` · `addin/pilot/taskpane.js` (`SERVIS_KOKU`, `IC_ALAN`) ·
+>    `addin/**/manifest*.xml` · `deploy-addin.ps1` · `tools/owa-probe/*.js` (`OWA` adresi, `USER`)
+> 4. **Model anahtarı:** kullanıcıdan `openrouter-key.txt` iste (depoda yok, olmamalı). `tools/llm-smoke.ps1` ile doğrula
+> 5. **IIS:** `OutlookAjan` sitesi, yalnız HTTPS `:4443`, kök `C:\inetpub\outlook-ajan`, sunucu sertifikasıyla; sonra `deploy-addin.ps1`
+> 6. **Eklenti kaydı:** Exchange **remote PowerShell** ile (snap-in değil, V2) `New-App -OrganizationApp -FileData` (V1).
+>    Görünmezse `Restart-WebAppPool MSExchangeOWAAppPool` (V9 — yalnız lab'de)
+> 7. **Servis:** yönetici olarak `backend\hizmet-kur.ps1`
+> 8. **Test posta kutuları:** `test1`, `test2`; `test1` gelen kutusuna konusu `[ILN-2026-4471] ...` olan **ekli** sentetik bir mail
+>    (testler bu ipucunu arar; içerik `test-data/`'dan, K10). Parola git-ignore'lu `tools/owa-probe/lab-creds-test1.txt`'e
+> 9. **Doğrula:** `eval/kosum.js en 1` · `faz1/2/3-check.js` · `kapat-check.js`. Faz 0 çivilerinden sürüme bağlı olanları
+>    (#4 requirement set, #5 sabitleme, #7 ek API'si) `addin/probe.*` ile **yeniden ölç** — Exchange sürümü farklıysa sonuç değişebilir
+> 10. **Yayın:** GitHub'a geri gönderirken gerçek adlar sızmasın diye yeni adlarla `tools/yayin-gizli.json` oluştur
+>     (biçim: `{degisimler:[[eski,yeni]], yasakli:[regex], sirDosyalari:[yol]}`) ve `tools/yayin-hazirla.js` kullan;
+>     ya da doğrudan bu depoda çalışılacaksa lab değerlerini commit'leme
+
 > ⛔ **YAZILIM TARAFI BİTTİ. BURADAN SONRASI ONAY VE İNSAN GEREKTİRİYOR.**
 >
 > Faz 0 (12/12 çivi) · Faz 1 · Faz 2 · Faz 3 (§6'da 8/8 özellik) · Faz 4 (ölçüm + değerlendirme)
