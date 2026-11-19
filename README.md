@@ -42,7 +42,7 @@ Outlook / OWA
   └─ görev paneli (addin/pilot, Office.js, ES5)          https://<eklenti-host>:4443
         │  Authorization: Bearer <Exchange identity token>
         ▼
-     arka uç (backend, .NET 8 minimal API)                https://<servis-host>:4444
+     arka uç (backend, .NET 10 minimal API)               https://<servis-host>:4444
         │  POST /analiz (A) · /taslak (B) · /kontrol (C) · /olcum
         ▼
      OpenAI uyumlu model ucu  (lab: dış API · üretim: vLLM + LiteLLM)
@@ -68,7 +68,7 @@ Outlook / OWA
 
 ## Kurulum (lab)
 
-Gerekenler: Exchange Server (on-prem), .NET 8 SDK, Node.js 24, eklentiyi yayımlayacak bir IIS sitesi,
+Gerekenler: Exchange Server (on-prem), .NET 10 SDK, Node.js 24, eklentiyi yayımlayacak bir IIS sitesi,
 OpenAI uyumlu bir model ucu ve anahtarı.
 
 1. **Yapılandırma**

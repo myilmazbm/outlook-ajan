@@ -21,7 +21,7 @@
 | IIS sertifikası | `CN=EXCH01`, **kendinden imzalı**, SAN: `EXCH01`, `mail.example.local` |
 | Forest'ta iç CA | **Yok** (AD CS kurulu değil) |
 | Masaüstü Outlook | **EXCH01'te kurulu değil** |
-| Çalışma zamanları | .NET 8.0.425 · Node.js 24.19.0 *(bu yinelemede kuruldu, aşağıya bak)* |
+| Çalışma zamanları | .NET 10 (SDK 10.0.404; 2026-11-19'da 8'den geçildi) · Node.js 24.19.0 *(bu yinelemede kuruldu, aşağıya bak)* |
 
 ---
 
@@ -182,7 +182,7 @@
 >
 > 1. **Ortamı ölç, varsayma:** sunucu adı, etki alanı, Exchange sürümü, `Get-ExchangeServer` (K11: prod bu forest'ta olmamalı).
 >    "Ortam gerçekleri" tablosunu yeni değerlerle güncelle
-> 2. **Araçlar:** .NET 8 SDK, Node.js 24, `tools/owa-probe` içinde `npm install` + `npx playwright install chromium`
+> 2. **Araçlar:** .NET 10 SDK, Node.js 24, `tools/owa-probe` içinde `npm install` + `npx playwright install chromium`
 > 3. **Yer tutucuları gerçek değerlerle değiştir** (`mail.example.local`, `example.local`, `EXCH01`, sıfırlı parmak izi):
 >    `config/sunucu.lab.json` · `config/auth.lab.json` · `addin/pilot/taskpane.js` (`SERVIS_KOKU`, `IC_ALAN`) ·
 >    `addin/**/manifest*.xml` · `deploy-addin.ps1` · `tools/owa-probe/*.js` (`OWA` adresi, `USER`)
@@ -340,6 +340,7 @@ En yeni üstte. Her satır: ne yapıldı, neyle doğrulandı.
 
 | Tarih | Yapılan | Doğrulama |
 |---|---|---|
+| 2026-11-19 | **.NET 8 → .NET 10** (8'in desteği Kasım 2026'da bitiyor). Hedef `net10.0`, hizmet paketi 10.0.0, eskimiş `X509Certificate2(byte[])` → `X509CertificateLoader` | Derleme 0 uyarı; hizmet süreci coreclr 10.0; `faz1` KARŞILANDI · `faz2` 4/4 · `faz3` 6/6 · `kapat` 8/8; tokensiz/çöp/`alg:none` → 401 |
 | 2026-11-19 | **Yayın kopyası hazırlandı** — `tools/yayin-hazirla.js` izinli dosyaları kopyalar, lab adlarını yer tutucuyla değiştirir, kalıntı tarar | Betiğin kendi taraması: yasaklı desen 0 |
 | 2026-11-19 | **"Ajanı kapat" (§5.7) + Windows hizmeti (E7) + yapılandırma ayrıştırması** | `kapat-check.js` 8/8 · `faz1` KARŞILANDI · `faz2` 4/4 · `faz3` 6/6 — hepsi hizmet üzerinden; ES5 taraması 0 |
 | 2026-11-19 | `faz1-check.js` eskimiş beklentisi düzeltildi ("Panel çalışıyor" → "Panel hazır") | `faz1` → KABUL ÖLÇÜTÜ KARŞILANDI |

@@ -156,7 +156,7 @@ public sealed class KimlikDogrulayici(KimlikAyar ayar, IHttpClientFactory fab, I
                     // ilk incelemede gorunmuyor. Bu yuzden alan adi duyarsiz aranir.
                     var deger = Alan(Alan(a, "keyvalue"), "value")?.GetValue<string>();
                     if (string.IsNullOrWhiteSpace(deger)) continue;
-                    try { liste.Add(new X509Certificate2(Convert.FromBase64String(deger))); }
+                    try { liste.Add(X509CertificateLoader.LoadCertificate(Convert.FromBase64String(deger))); }
                     catch { /* bozuk kayıt atlanır */ }
                 }
             }
