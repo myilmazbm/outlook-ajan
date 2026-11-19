@@ -101,3 +101,7 @@ OWA_PASS=... node kapat-check.js          # "Ajanı kapat" anahtarı
 - Gecikme ve eşzamanlılık sayıları dış API üzerinden alındı; üretim donanımında yeniden ölçülmeli.
 - Değerlendirme seti küçük ve sentetik (10 senaryo).
 - Üretim yapılandırmaları (`*.prod.json`) şablondur.
+
+## Lisans
+
+[MIT](LICENSE)

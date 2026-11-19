@@ -24,7 +24,7 @@ const gizli = JSON.parse(fs.readFileSync(path.join(__dirname, 'yayin-gizli.json'
 
 // --- 1) beyaz liste ---
 const IZINLI = [
-  /^\.gitignore$/, /^README\.md$/, /^00-PROJE-BRIEF\.md$/, /^DURUM\.md$/, /^deploy-addin\.ps1$/,
+  /^\.gitignore$/, /^README\.md$/, /^LICENSE$/, /^00-PROJE-BRIEF\.md$/, /^DURUM\.md$/, /^deploy-addin\.ps1$/,
   /^addin\/[^/]+\.(xml|html|js|css)$/, /^addin\/assets\/icon-\d+\.png$/, /^addin\/pilot\/[^/]+\.(xml|html|js|css)$/,
   /^backend\/[^/]+\.(cs|csproj|md|ps1)$/, /^backend\/appsettings\.json$/,
   /^config\/[^/]+\.json$/,
@@ -54,7 +54,10 @@ const kacis = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const degisimler = gizli.degisimler.map(([eski, yeni]) => [new RegExp(kacis(eski), 'gi'), yeni]);
 const IKILI = /\.png$/i;
 
-fs.rmSync(hedef, { recursive: true, force: true });
+// Hedef temizlenir ama .git KORUNUR: yayin kopyasi kendi gecmisini tasir.
+if (fs.existsSync(hedef)) {
+  for (const ad of fs.readdirSync(hedef)) if (ad !== '.git') fs.rmSync(path.join(hedef, ad), { recursive: true, force: true });
+}
 for (const g of liste) {
   const kaynak = path.join(kok, g), varis = path.join(hedef, g);
   fs.mkdirSync(path.dirname(varis), { recursive: true });
