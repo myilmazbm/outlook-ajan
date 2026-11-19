@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "_not": "Exchange identity token dogrulamasi (E5 / civi #8). metadataUrl ve expectedIssuer BILEREK sabitlenmistir: token icindeki appctx.amurl saldirgan tarafindan kontrol edilebilir, bu yuzden ASLA ona bakilmaz.",
+    "enabled": true,
+    "metadataUrl": "https://mail.example.local/autodiscover/metadata/json/1",
+    "expectedIssuer": "00000002-0000-0ff1-ce00-000000000000@example.local",
+    "expectedAudience": "https://mail.example.local:4443/pilot/taskpane.html",
+    "clockSkewSeconds": 300,
+    "metadataCacheHours": 24
+  }
+}

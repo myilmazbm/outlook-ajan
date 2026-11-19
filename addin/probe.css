@@ -1,0 +1,203 @@
+/* Yetenek Ölçümü - Faz 0 doğrulama çivisi
+   Sade, bağımlılıksız CSS. Eski masaüstü webview'leri (IE11 / eski EdgeHTML)
+   hedeflendiği için CSS değişkeni, grid veya modern seçici kullanılmaz. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #201f1e;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", Tahoma, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  padding: 12px 14px 24px 14px;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+  color: #0b3b6f;
+}
+
+.sub {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: #605e5c;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 6px 0;
+  padding: 4px 8px;
+  background: #f3f2f1;
+  border-left: 3px solid #0078d4;
+  color: #201f1e;
+}
+
+.mono,
+.detail,
+.env,
+.transcript,
+textarea {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+/* Durum şeridi */
+.status {
+  margin: 0 0 10px 0;
+  padding: 7px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  border: 1px solid #c8c6c4;
+  background: #f3f2f1;
+}
+.status-wait { border-color: #c8c6c4; background: #f3f2f1; color: #323130; }
+.status-ok   { border-color: #9fd89f; background: #eff6ef; color: #0e5814; }
+.status-err  { border-color: #f1707b; background: #fdf3f4; color: #a4262c; }
+.status-warn { border-color: #f0c674; background: #fdf7e8; color: #7a5300; }
+
+.env {
+  font-size: 11px;
+  color: #605e5c;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 0 0 8px 0;
+}
+.env div { margin: 1px 0; }
+
+.boot {
+  padding: 10px;
+  border: 1px dashed #c8c6c4;
+  background: #faf9f8;
+  font-size: 12px;
+  color: #323130;
+}
+.boot strong { display: block; margin-bottom: 3px; }
+
+/* Satırlar */
+.section { margin: 0; }
+
+.row {
+  display: block;
+  padding: 4px 6px;
+  border-bottom: 1px solid #edebe9;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.row:nth-child(even) { background: #fbfbfa; }
+
+.label {
+  display: inline-block;
+  min-width: 190px;
+  vertical-align: top;
+  font-size: 12px;
+  color: #323130;
+  padding-right: 6px;
+}
+
+.verdict {
+  display: inline-block;
+  min-width: 52px;
+  text-align: center;
+  vertical-align: top;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 1px 6px;
+  margin-right: 8px;
+  border: 1px solid #c8c6c4;
+  border-radius: 2px;
+  background: #f3f2f1;
+  color: #323130;
+}
+.verdict-ok  { background: #dff6dd; border-color: #6bb700; color: #0b6a0b; }
+.verdict-no  { background: #fde7e9; border-color: #d13438; color: #a4262c; }
+.verdict-err { background: #fff4ce; border-color: #f7a802; color: #8a5300; }
+.verdict-pending { background: #f3f2f1; border-color: #c8c6c4; color: #605e5c; }
+
+.detail {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 11.5px;
+  color: #201f1e;
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+/* Notlar ve özet */
+.note {
+  margin: 6px 0 2px 0;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #c8c6c4;
+  background: #faf9f8;
+  color: #323130;
+}
+.note-instruction {
+  border-color: #f7a802;
+  background: #fff8e6;
+  color: #6b4200;
+  font-weight: 600;
+}
+.note-summary {
+  border-color: #0078d4;
+  background: #eff6fc;
+  color: #0b3b6f;
+  font-family: Consolas, "Courier New", monospace;
+  font-weight: 700;
+}
+
+/* Eylemler */
+.actions { margin: 16px 0 6px 0; }
+
+button {
+  font-family: inherit;
+  font-size: 13px;
+  padding: 7px 16px;
+  border: 1px solid #0078d4;
+  background: #0078d4;
+  color: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+button:hover { background: #106ebe; border-color: #106ebe; }
+button:active { background: #005a9e; border-color: #005a9e; }
+
+.copystate {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #0b6a0b;
+}
+.copystate-err { color: #a4262c; }
+
+.footnote {
+  margin: 14px 0 0 0;
+  font-size: 11px;
+  color: #605e5c;
+  border-top: 1px solid #edebe9;
+  padding-top: 8px;
+}
+
+/* Yedek kopyalama için ekran dışı alan */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* Dar görev bölmesi */
+@media (max-width: 420px) {
+  .label { min-width: 0; display: block; font-weight: 600; }
+  .detail { display: block; margin-top: 2px; }
+}

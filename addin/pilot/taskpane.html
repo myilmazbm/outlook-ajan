@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Outlook Ajanı</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css"/>
+</head>
+<body>
+  <header class="ust">
+    <h1>Outlook Ajanı</h1>
+    <p id="ustAlt" class="alt">Özet, aksiyonlar, sorular</p>
+  </header>
+
+  <div id="durum" class="durum bekle">Office.js bekleniyor…</div>
+
+  <section id="kapaliAlani" class="kart gizli">
+    <h2>Ajan kapalı</h2>
+    <p class="ipucu">Kapalıyken açık ileti okunmaz, uyarılar ve düğmeler çalışmaz, servise içerik gönderilmez. Tercih kendi posta kutunuzda saklanır.</p>
+    <button id="acDugme" class="dugme" type="button">Ajanı aç</button>
+  </section>
+
+  <section id="ogeBilgi" class="kart gizli">
+    <h2 id="ogeBasligi">Açık öğe</h2>
+    <dl>
+      <dt>Konu</dt><dd id="konu">—</dd>
+      <dt id="kimdenEtiketi">Kimden</dt><dd id="kimden">—</dd>
+      <dt>Alıcı sayısı</dt><dd id="alici">—</dd>
+      <dt id="ekEtiketi">Ek</dt><dd id="ek">—</dd>
+    </dl>
+    <p id="ekNotu" class="not amber gizli"></p>
+    <p id="aliciNotu" class="not sessiz gizli"></p>
+  </section>
+
+  <!-- ===================== OKUMA KİPİ (değişmedi) ===================== -->
+
+  <section id="okumaEylem" class="eylem">
+    <button id="ozetleDugme" class="dugme" type="button" disabled="disabled">Özetle</button>
+    <p class="ipucu">Tek istek gönderilir; üç sekme de aynı yanıttan dolar.</p>
+  </section>
+
+  <div id="yukleniyor" class="yukleme gizli">
+    <span class="donen" aria-hidden="true"></span>
+    <span>Çözümleniyor… en çok 60 saniye.</span>
+  </div>
+
+  <div id="analizHata" class="durum hata gizli"></div>
+
+  <section id="sonucAlani" class="gizli">
+    <div id="etiketler" class="etiketler"></div>
+
+    <div class="sekmeler" role="tablist">
+      <button type="button" id="sekmeOzet" class="sekme etkin" role="tab" aria-selected="true">Özet</button>
+      <button type="button" id="sekmeAksiyon" class="sekme" role="tab" aria-selected="false">Aksiyonlar</button>
+      <button type="button" id="sekmeSoru" class="sekme" role="tab" aria-selected="false">Sorular</button>
+    </div>
+
+    <div class="kart panelKap">
+      <div id="panelOzet" class="panel" role="tabpanel">
+        <p id="ozetMetin" class="metin">—</p>
+      </div>
+      <div id="panelAksiyon" class="panel gizli" role="tabpanel">
+        <ul id="aksiyonListe" class="liste"></ul>
+        <p id="aksiyonBos" class="bos gizli">Aksiyon maddesi bulunmadı.</p>
+      </div>
+      <div id="panelSoru" class="panel gizli" role="tabpanel">
+        <ul id="soruListe" class="liste"></ul>
+        <p id="soruBos" class="bos gizli">Cevap bekleyen soru bulunmadı.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== YAZMA KİPİ (Faz 3) ===================== -->
+
+  <section id="yazmaAlani" class="gizli">
+
+    <section class="kart grup">
+      <h2>Taslak üret</h2>
+      <p class="ipucu">Açık iletiye yanıt taslağı üretilir. Metin siz onaylamadan maile yazılmaz.</p>
+      <div class="dugmeSirasi">
+        <button id="taslakKisa" class="dugme kucuk" type="button">Kısa</button>
+        <button id="taslakDetayli" class="dugme kucuk" type="button">Detaylı</button>
+        <button id="taslakResmi" class="dugme kucuk" type="button">Resmî</button>
+      </div>
+    </section>
+
+    <section class="kart grup">
+      <h2>Çeviri</h2>
+      <p class="ipucu">Gövdedeki metin hedef dile çevrilir.</p>
+      <div class="dugmeSirasi">
+        <button id="ceviriTr" class="dugme kucuk" type="button">Türkçe'ye</button>
+        <button id="ceviriEn" class="dugme kucuk" type="button">İngilizce'ye</button>
+      </div>
+    </section>
+
+    <div id="taslakYukleniyor" class="yukleme gizli">
+      <span class="donen" aria-hidden="true"></span>
+      <span id="taslakYuklemeMetni">Metin üretiliyor… en çok 60 saniye.</span>
+    </div>
+
+    <div id="taslakHata" class="durum hata gizli"></div>
+
+    <section id="taslakSonuc" class="kart grup gizli">
+      <h2 id="taslakBasligi">Üretilen metin</h2>
+      <textarea id="taslakMetin" class="taslakKutu" rows="10" readonly="readonly"
+                aria-label="Üretilen metin (salt okunur)"></textarea>
+      <button id="ekleDugme" class="dugme" type="button">Gövdeye ekle</button>
+      <p class="ipucu">Yalnız bu düğme maile yazar; ajan kendiliğinden hiçbir şey eklemez.</p>
+      <p id="ekleNotu" class="not sessiz gizli"></p>
+    </section>
+
+    <section class="kart grup">
+      <h2>Kontrol et</h2>
+      <p class="ipucu">Yazdığınız taslak, özetteki sorularla karşılaştırılır; mail gönderilmez.</p>
+      <button id="kontrolDugme" class="dugme" type="button">Kontrol et</button>
+
+      <div id="kontrolYukleniyor" class="yukleme gizli">
+        <span class="donen" aria-hidden="true"></span>
+        <span>Kontrol ediliyor… en çok 60 saniye.</span>
+      </div>
+
+      <p id="kontrolBilgi" class="not amber gizli"></p>
+      <div id="kontrolHata" class="durum hata gizli"></div>
+
+      <div id="kontrolSonuc" class="gizli">
+        <h3 class="altBaslik">Cevapsız</h3>
+        <ul id="cevapsizListe" class="liste onemli"></ul>
+        <p id="cevapsizBos" class="bos gizli">Cevapsız soru kalmamış.</p>
+
+        <h3 class="altBaslik sakin">Cevaplanan</h3>
+        <ul id="cevaplananListe" class="liste sakinListe"></ul>
+        <p id="cevaplananBos" class="bos gizli">Henüz cevaplanan soru yok.</p>
+
+        <p id="kontrolNot" class="not sessiz gizli"></p>
+      </div>
+    </section>
+
+  </section>
+
+  <div id="kapatAlani" class="kapatAlani gizli">
+    <button id="kapatDugme" class="baglanti" type="button">Ajanı kapat</button>
+  </div>
+
+  <footer class="dip">
+    <p>Bu panel yalnız siz açtığınızda çalışır (K6). Mail içeriği diske, günlüğe veya tarayıcı deposuna yazılmaz; sonuç panel kapanınca kaybolur (K2). Üretilen metin yalnız siz “Gövdeye ekle”ye bastığınızda maile yazılır; panel mail göndermez, silmez, taşımaz (K8).</p>
+  </footer>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>

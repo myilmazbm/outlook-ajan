@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PILOT EKLENTISI (Faz 1) - olcum araci DEGILDIR.
+  Izin   : ReadItem  (§6 / S1 - en az yetki. Olcum aracinin ReadWriteMailbox'i buraya TASINMADI.)
+  Kapsam : yalniz EXCH01 lab (K11)
+  Set    : olculen tavan Mailbox 1.5 (civi #4). Taban 1.1, VersionOverrides 1.3 -> guvenli.
+  Pinning: SupportsPinning bilerek birakildi. OWA'da calismiyor (civi #5, S9 karari) ama
+           zararsiz; masaustu Outlook devreye girerse §5.4 kendiliginden geri gelir.
+-->
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides"
+  xsi:type="MailApp">
+
+  <Id>c4f1a7e2-3b58-4d61-9a0c-8e77b2d4f316</Id>
+  <Version>0.1.0.0</Version>
+  <ProviderName>Ornek BT</ProviderName>
+  <DefaultLocale>tr-TR</DefaultLocale>
+  <DisplayName DefaultValue="Outlook Ajani"/>
+  <Description DefaultValue="Mail islerinde yardimci - zincir ozeti, aksiyonlar, sorular."/>
+  <IconUrl DefaultValue="https://mail.example.local:4443/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://mail.example.local:4443/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://mail.example.local:4443/pilot/taskpane.html"/>
+
+  <AppDomains>
+    <AppDomain>https://mail.example.local:4443</AppDomain>
+  </AppDomains>
+
+  <Hosts><Host Name="Mailbox"/></Hosts>
+
+  <Requirements>
+    <Sets><Set Name="Mailbox" MinVersion="1.1"/></Sets>
+  </Requirements>
+
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://mail.example.local:4443/pilot/taskpane.html"/>
+        <RequestedHeight>450</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+    <!-- Yazma kipi: BILEREK ayni SourceLocation. aud claim'i bu URL oldugu icin
+         farkli bir URL ikinci bir expectedAudience gerektirirdi (401 riski). -->
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://mail.example.local:4443/pilot/taskpane.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+
+  <Permissions>ReadWriteItem</Permissions>
+
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+  </Rule>
+
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+      <Requirements>
+        <bt:Sets DefaultMinVersion="1.3"><bt:Set Name="Mailbox"/></bt:Sets>
+      </Requirements>
+      <Hosts>
+        <Host xsi:type="MailHost">
+          <DesktopFormFactor>
+            <ExtensionPoint xsi:type="MessageReadCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="grpAjan">
+                  <Label resid="grpLabel"/>
+                  <Control xsi:type="Button" id="btnAjan">
+                    <Label resid="btnLabel"/>
+                    <Supertip><Title resid="btnLabel"/><Description resid="btnTip"/></Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="icon16"/>
+                      <bt:Image size="32" resid="icon32"/>
+                      <bt:Image size="80" resid="icon80"/>
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="paneUrl"/>
+                      <SupportsPinning>true</SupportsPinning>
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+            <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="grpAjanYaz">
+                  <Label resid="grpLabel"/>
+                  <Control xsi:type="Button" id="btnAjanYaz">
+                    <Label resid="btnLabel"/>
+                    <Supertip>
+                      <Title resid="btnLabel"/>
+                      <Description resid="btnTipYaz"/>
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="icon16"/>
+                      <bt:Image size="32" resid="icon32"/>
+                      <bt:Image size="80" resid="icon80"/>
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="paneUrl"/>
+                      <SupportsPinning>true</SupportsPinning>
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+          </DesktopFormFactor>
+        </Host>
+      </Hosts>
+      <Resources>
+        <bt:Images>
+          <bt:Image id="icon16" DefaultValue="https://mail.example.local:4443/assets/icon-16.png"/>
+          <bt:Image id="icon32" DefaultValue="https://mail.example.local:4443/assets/icon-32.png"/>
+          <bt:Image id="icon80" DefaultValue="https://mail.example.local:4443/assets/icon-80.png"/>
+        </bt:Images>
+        <bt:Urls>
+          <bt:Url id="paneUrl" DefaultValue="https://mail.example.local:4443/pilot/taskpane.html"/>
+        </bt:Urls>
+        <bt:ShortStrings>
+          <bt:String id="grpLabel" DefaultValue="Outlook Ajani"/>
+          <bt:String id="btnLabel" DefaultValue="Ajan"/>
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <bt:String id="btnTip" DefaultValue="Acik mailin ozetini, aksiyon maddelerini ve sorularini gosterir."/>
+          <bt:String id="btnTipYaz" DefaultValue="Taslak yazmaniza yardim eder; eksik cevap ve ek kontrolu yapar."/>
+        </bt:LongStrings>
+      </Resources>
+    </VersionOverrides>
+  </VersionOverrides>
+</OfficeApp>

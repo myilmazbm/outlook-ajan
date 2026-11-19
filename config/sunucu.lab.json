@@ -1,0 +1,8 @@
+{
+  "sunucu": {
+    "_not": "Ortama ozgu sunucu ayarlari. panelOrigin: eklentinin yayinlandigi koken (CORS yalniz buna izin verir). certThumbprint: LocalMachine/My deposundaki TLS sertifikasi.",
+    "port": 4444,
+    "panelOrigin": "https://mail.example.local:4443",
+    "certThumbprint": "0000000000000000000000000000000000000000"
+  }
+}

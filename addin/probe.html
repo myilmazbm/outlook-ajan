@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yetenek Ölçümü</title>
+<link rel="stylesheet" href="probe.css">
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" onerror="window.__officeLoadFailed = true;"></script>
+</head>
+<body>
+<div id="app">
+
+  <header id="head">
+    <h1>Yetenek Ölçümü</h1>
+    <p class="sub">Faz 0 doğrulama çivisi &mdash; bu panel hiçbir yeteneği varsaymaz, ölçer.</p>
+  </header>
+
+  <div id="status" class="status status-wait">Office.js bekleniyor&hellip;</div>
+
+  <div id="env" class="env mono"></div>
+
+  <div id="results" class="results">
+    <div id="bootMessage" class="boot">
+      <strong>Ölçüm henüz başlamadı.</strong>
+      <span>Bu sayfa Outlook (OWA veya masaüstü) içinde bir görev bölmesi olarak açılmalıdır.
+      Tarayıcıda doğrudan açıldıysa Office.js başlatılamaz ve aşağıda açık bir hata durumu görünür.</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="copyBtn" type="button">Panoya kopyala</button>
+    <span id="copyState" class="copystate" role="status"></span>
+  </div>
+
+  <p class="footnote">
+    Güvenlik: belirteçler (token) hiçbir zaman tam olarak gösterilmez veya günlüğe yazılmaz;
+    yalnızca uzunluk ve ilk 12 karakter raporlanır. Posta gövdesi içeriği okunmaz.
+  </p>
+
+  <textarea id="transcript" class="offscreen" readonly aria-hidden="true"></textarea>
+
+</div>
+<script src="probe.js"></script>
+</body>
+</html>

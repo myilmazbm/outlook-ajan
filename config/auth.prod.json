@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "_not": "Prod'da enabled ASLA false olmaz. URL'ler prod Exchange'e gore doldurulacak (Faz 5).",
+    "enabled": true,
+    "metadataUrl": "https://<prod-exchange>/autodiscover/metadata/json/1",
+    "expectedIssuer": "00000002-0000-0ff1-ce00-000000000000@<prod-realm>",
+    "expectedAudience": "https://<eklenti-host>/pilot/taskpane.html",
+    "clockSkewSeconds": 300,
+    "metadataCacheHours": 24
+  }
+}

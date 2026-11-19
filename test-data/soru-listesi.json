@@ -1,0 +1,20 @@
+{
+  "id": "soru-listesi",
+  "senaryo": "Müşterinin tek bir mesajda birbirinden bağımsız 6 ayrı soru sorması; soru çıkarımı ve eksiksiz cevaplama testi.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "musteri-sorusu",
+    "oncelik": "orta"
+  },
+  "konu": "Yeni dönem sözleşmesi öncesi bazı sorular",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [{ "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" }],
+      "tarih": "2026-09-17T10:15:00+03:00",
+      "govde": "Gülnur Hanım merhaba,\n\n2027 dönemi çerçeve sözleşmesini imzalamadan önce netleştirmemiz gereken birkaç husus var. Aşağıdaki başlıkları yanıtlarsanız teklifi yönetimimize sunacağız.\n\n1) Depolama tarifesinde palet başına aylık ücret 2027 için ne olacak? Bu yıl uyguladığınız fiyat üzerinden ne kadarlık bir artış öngörüyorsunuz?\n\n2) Sigorta kapsamı nakliye sırasındaki ıslanma ve nem hasarını içeriyor mu? Geçen sevkiyatta yaşadığımız olay bizi bu konuda tedirgin etti.\n\n3) Acil sevkiyat talebi ilettiğimizde garanti ettiğiniz azami müdahale süresi kaç saat? Hafta sonu ve resmi tatiller bu süreye dahil mi?\n\n4) Kendi stok sistemimizle entegrasyon için bir API sağlıyor musunuz? Sağlıyorsanız stok hareketleri gerçek zamanlı mı yoksa gün sonu toplu mu aktarılıyor?\n\n5) Sözleşmede yıllık asgari hacim taahhüdü olacak mı? Olacaksa bu hacmin altında kalmamız durumunda nasıl bir fark bedeli uygulanıyor?\n\n6) Sevkiyat evraklarını elektronik imzayla teslim alabiliyor muyuz, yoksa ıslak imzalı nüsha şartınız devam ediyor mu?\n\nYanıtlarınızı bu hafta içinde alabilirsek 25 Eylül'deki yönetim toplantımıza yetiştirebiliriz.\n\nİyi çalışmalar,\nAyşe Çetinkaya\nTedarik Zinciri Sorumlusu | Mavi Deniz Tekstil"
+    }
+  ]
+}

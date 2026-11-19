@@ -1,0 +1,4 @@
+Translate the email above into {HEDEF_DIL} ("tr" = Turkish, "en" = English).
+Preserve meaning, register and business tone exactly. Do not summarise, do not add
+commentary, do not omit anything. Keep names, numbers, codes and dates unchanged.
+Return only the translated text.

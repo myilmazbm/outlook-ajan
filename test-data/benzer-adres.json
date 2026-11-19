@@ -1,0 +1,47 @@
+{
+  "id": "benzer-adres",
+  "senaryo": "Birbirine çok benzeyen iki alıcı adresinin (ahmet.yildiz / ahmet.yildirim ve s.aydin / s.aydın) karıştırılması sonucu mesajın yanlış kişiye gitmesi; benzer adres uyarısı testi.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "yanlis-alici-riski",
+    "oncelik": "yuksek"
+  },
+  "konu": "Yeni dönem prim tablosu - kontrol rica ederim",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Ahmet Yıldırım", "eposta": "ahmet.yildirim@yildizlojistik.example" },
+        { "ad": "Selin Aydın", "eposta": "s.aydın@yildizlojistik.example" }
+      ],
+      "cc": [],
+      "tarih": "2026-09-17T13:05:00+03:00",
+      "govde": "Ahmet Bey, Selin Hanım merhaba,\n\nSaha ekibinin yeni dönem prim tablosunu hazırladım. Rakamlar henüz kesinleşmedi, sadece sizin kontrolünüz için paylaşıyorum.\n\nÖzellikle vardiya sorumlularının hedef eşiklerine bakmanızı rica ediyorum; geçen dönemki eşikler çok yüksek kaldığı için prim neredeyse hiç kimseye yansımadı.\n\nGeri bildiriminizi Cuma gününe kadar alabilirsem tabloyu kesinleştirip insan kaynaklarına göndereceğim.\n\nGülnur Özdemir"
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Ahmet Yıldız", "eposta": "ahmet.yildiz@yildizlojistik.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-17T13:40:00+03:00",
+      "govde": "Gülnur Hanım merhaba,\n\nSanırım bir karışıklık var. Ben satın alma bölümünden Ahmet Yıldız'ım, saha prim tablosuyla bir ilgim yok. Mesajınız bana da düşmüş.\n\nAradığınız kişi büyük ihtimalle saha operasyondan Ahmet Yıldırım'dır; adreslerimiz neredeyse aynı, bu karışıklık sık yaşanıyor.\n\nİçeriği okumadan kapattım, bilginize.\n\nAhmet Yıldız"
+    },
+    {
+      "sira": 3,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [{ "ad": "Ahmet Yıldız", "eposta": "ahmet.yildiz@yildizlojistik.example" }],
+      "cc": [{ "ad": "Ahmet Yıldırım", "eposta": "ahmet.yildirim@yildizlojistik.example" }],
+      "tarih": "2026-09-17T14:02:00+03:00",
+      "govde": "Ahmet Bey,\n\nÇok özür dilerim, Outlook adresi otomatik tamamladı ve fark etmemişim. Anlayışınız için teşekkür ederim.\n\nBir de Selin Hanım'ın adresini yazarken noktalı ı ile yazmışım, ona da ulaşmamış olabilir. Doğru adresle yeniden göndereceğim.\n\nGülnur"
+    },
+    {
+      "sira": 4,
+      "kimden": { "ad": "Hakan Bilgin", "eposta": "hakan.bilgin@yildizlojistik.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "s.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-17T14:25:00+03:00",
+      "govde": "Gülnur Hanım,\n\nSistem günlüklerinde iki başarısız teslimat gördüm, onun için yazıyorum.\n\nSelin Hanım'ın kurumsal adresi noktasız ı ile s.aydin@yildizlojistik.example şeklindedir. Noktalı ı içeren adres sistemimizde tanımlı değil, o mesaj teslim edilemedi.\n\nAyrıca ahmet.yildiz ve ahmet.yildirim adresleri için adres defterinde ayırt edici açıklama alanı ekletiyorum, bu hafta içinde devreye girer.\n\nHakan Bilgin\nBilgi Sistemleri"
+    }
+  ]
+}

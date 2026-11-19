@@ -1,0 +1,13 @@
+{
+  "llm": {
+    "provider":   "openrouter",
+    "baseUrl":    "https://openrouter.ai/api/v1",
+    "apiKeyFile": "openrouter-key.txt",
+    "model":      "qwen/qwen3.8-27b",
+    "maxTokens":  3000,
+    "_extraBody": "saglayiciya ozgu ek govde alanlari. Kod bunu yorumlamaz, oldugu gibi istege ekler.",
+    "extraBody": {
+      "reasoning": { "enabled": false }
+    }
+  }
+}

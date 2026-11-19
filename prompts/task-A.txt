@@ -1,0 +1,1 @@
+Analyse the email thread above and return the JSON object described in the schema. Return only the JSON object.

@@ -1,0 +1,21 @@
+{
+  "id": "eksik-cevap",
+  "senaryo": "Gelen mesajda 4 soru var; taslak yanıt bunlardan yalnızca 2'sini karşılıyor. Yanıtlanmamış soruların tespiti test ediliyor.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "eksik-yanit-kontrolu",
+    "oncelik": "yuksek"
+  },
+  "konu": "Ekim ayı sevkiyat takvimi ve depo düzenlemesi hk.",
+  "taslak": "Murat Bey merhaba,\n\nEkim ayı sevkiyat takvimini hazırladık, planlanan çıkış günleri her haftanın Salı ve Perşembe günleridir. İlk sevkiyat 6 Ekim Salı günü yola çıkacak şekilde planlandı.\n\nSoğuk zincir gerektiren kalemler için Kadıköy hattında ısı kontrollü araç tahsis edebiliyoruz; bu kalemleri sipariş formunda ayrıca işaretlemeniz yeterli olacaktır.\n\nHerhangi bir sorunuz olursa memnuniyetle yanıtlarım.\n\nSaygılarımla,\nGülnur Özdemir\nMüşteri İlişkileri | Yıldız Lojistik A.Ş.",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [{ "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" }],
+      "tarih": "2026-09-18T09:25:00+03:00",
+      "govde": "Gülnur Hanım merhaba,\n\nEkim ayı planlamasına başlıyoruz, dört konuda bilgi rica ediyorum:\n\n1) Ekim ayı sevkiyat takviminiz belli oldu mu? Hangi günler çıkış yapıyorsunuz?\n\n2) Soğuk zincir gerektiren kalemler için ısı kontrollü araç tahsis edebiliyor musunuz?\n\n3) Depomuzdaki raf düzenlemesi 12 Ekim'de değişecek; o hafta teslimatları rampa 2 yerine rampa 4'ten alabilir miyiz?\n\n4) Ekim ayından itibaren faturaları tek tek değil, on beş günlük dönemler halinde toplu kesmeniz mümkün mü?\n\nCevaplarınızı bekliyorum.\n\nMurat Yavuzer\nSatınalma Müdürü | Mavi Deniz Tekstil"
+    }
+  ]
+}

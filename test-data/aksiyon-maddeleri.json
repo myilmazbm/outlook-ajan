@@ -1,0 +1,43 @@
+{
+  "id": "aksiyon-maddeleri",
+  "senaryo": "Düz metin içine gömülmüş, sahibi ve son tarihi belli olan tam 5 aksiyon maddesi barındıran proje yazışması; aksiyon çıkarımı testi.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "proje-takip",
+    "oncelik": "yuksek"
+  },
+  "konu": "Depo otomasyonu geçiş planı - haftalık değerlendirme",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Hakan Bilgin", "eposta": "hakan.bilgin@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" }],
+      "tarih": "2026-09-16T09:00:00+03:00",
+      "govde": "Herkese merhaba,\n\nDün akşamki değerlendirme toplantısında konuştuklarımızı toparlıyorum. Genel gidişat fena değil ama iki kalemde ciddi gecikme var ve bunların kapatılması gerekiyor.\n\nÖncelikle barkod terminalleri meselesi. Sahaya inen on iki terminalden dördü kablosuz ağa bağlanmakta zorlanıyor, özellikle B blok yükleme rampasında sinyal kopuyor. Hakan, bu terminallerin ağ ayarlarını gözden geçirip rampa tarafına ek erişim noktası konumlandırma çalışmasını 22 Eylül Salı gününe kadar tamamlarsan, aynı hafta içinde ikinci saha testini yapabiliriz.\n\nİkinci konu operatör eğitimi. Vardiya sorumlularının yeni ekranlara alışması beklediğimizden uzun sürdü. Deniz'in geçen hafta hazırladığı kısa kılavuz işe yaradı ama yeterli değil. Deniz, üç vardiyanın tamamına birer saatlik uygulamalı eğitim planını 19 Eylül Cuma akşamına kadar takvime işlersen, eğitimleri gelecek hafta içinde bitirmiş oluruz.\n\nMaliyet tarafında da bir soru işareti kaldı. Tedarikçinin gönderdiği ikinci hakediş dosyasında lisans kalemleri iki kez faturalanmış gibi görünüyor. Emre, bu dosyayı kontrol edip mükerrer görünen kalemleri 18 Eylül Perşembe mesai bitimine kadar tespit eder ve tedarikçiye resmi düzeltme talebi açarsan ödeme takvimimiz kaymaz.\n\nBir de eski sistemden veri taşıma var. Test ortamında taşınan stok kayıtlarının yaklaşık yüzde üçünde birim dönüşümü hatalı çıktı. Hakan, bu dönüşüm kuralını düzeltip taşımayı yeniden çalıştırmayı 25 Eylül Perşembe gününe kadar bitirmeni rica ediyorum; canlıya geçmeden önce temiz bir taşıma raporu görmek istiyorum.\n\nSon olarak, canlıya geçiş tarihi için yönetime bir öneri sunmamız gerekiyor. Ben taslak geçiş planını hazırlayıp 23 Eylül Çarşamba gününe kadar Kerem Bey'e ileteceğim, siz de o tarihe kadar kendi bölümünüzle ilgili riskleri bana yazarsanız plana ekleyeyim.\n\nBir sorunuz olursa çekinmeden yazın.\n\nSelin Aydın\nOperasyon Müdürü | Yıldız Lojistik A.Ş."
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Hakan Bilgin", "eposta": "hakan.bilgin@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-16T10:35:00+03:00",
+      "govde": "Selin,\n\nTerminal ve ağ tarafını not aldım, 22'sine yetiştiririm. Ek erişim noktası için küçük bir bütçe talebi açmam gerekebilir, kalemi Emre'ye ayrıca yazacağım.\n\nVeri taşıma için 25 Eylül biraz sıkışık ama deneyelim. Dönüşüm hatası sadece metretül bazlı kalemlerde görünüyor, kural tek yerde düzeltilecek gibi duruyor.\n\nHakan"
+    },
+    {
+      "sira": 3,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Hakan Bilgin", "eposta": "hakan.bilgin@yildizlojistik.example" }],
+      "tarih": "2026-09-16T11:48:00+03:00",
+      "govde": "Selin,\n\nEğitim takvimini Cuma'ya kadar çıkarırım. Tek çekincem gece vardiyası; o ekibi eğitim için gündüze çekersek o gün sevkiyat kapasitesi düşer. Cumartesi sabahına alsak olur mu?\n\nDeniz"
+    }
+  ]
+}

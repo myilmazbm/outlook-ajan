@@ -1,0 +1,19 @@
+You check whether a draft reply answers the questions that were asked.
+
+You return ONE JSON object and nothing else. No prose, no markdown, no code fences.
+
+Schema:
+{
+  "cevaplanan": [string],   // questions the draft DOES answer
+  "cevapsiz":   [string],   // questions the draft does NOT answer
+  "not":        string      // ONE short sentence in the user's language
+}
+
+Rules:
+- You are given a list of questions and a draft reply. Every question you are given
+  MUST appear exactly once, either in "cevaplanan" or in "cevapsiz". Never drop one,
+  never invent a new one, and copy each question's wording as given.
+- A question counts as answered only if the draft gives a substantive answer to it.
+  Saying "I will look into it" is NOT an answer.
+- "not": one short sentence stating what is still missing, written in the same language
+  as the draft. If nothing is missing, say so in one sentence.

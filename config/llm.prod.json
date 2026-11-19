@@ -1,0 +1,13 @@
+{
+  "llm": {
+    "provider":   "litellm",
+    "baseUrl":    "http://litellm.internal:4000/v1",
+    "apiKeyFile": "litellm-key.txt",
+    "model":      "qwen3.8-27b",
+    "maxTokens":  3000,
+    "_extraBody": "saglayiciya ozgu ek govde alanlari. vLLM'de dusunme kapatma chat_template_kwargs ile yapilir.",
+    "extraBody": {
+      "chat_template_kwargs": { "enable_thinking": false }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_not": "A cagrisinin tek dogru kaynagi (§3.2). reason_code ve category SABIT enum'dur - serbest metin K2 ihlalidir.",
+  "alanlar": ["lang","category","priority","reason_code","reply_needed","summary","action_items","questions"],
+  "enum": {
+    "lang":     ["tr","en","mixed"],
+    "category": ["action_required","question","fyi","meeting","approval","escalation","newsletter","automated","other"],
+    "reason_code": ["deadline_mentioned","direct_question","explicit_request","approval_needed","escalation_tone","meeting_logistics","no_action_needed","informational_only","automated_message","other"],
+    "priority": [1,2,3,4,5]
+  },
+  "serbest_metin": ["summary","action_items","questions"],
+  "_uyari": "serbest_metin alanlari YALNIZ panelde gosterilir; asla loglanmaz, saklanmaz (K2)."
+}

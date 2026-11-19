@@ -1,0 +1,95 @@
+/* Faz 2 pilot paneli - sade, dar panele uygun. ES5/IE11 uyumlu CSS, derleme adimi yok. */
+body{margin:0;padding:12px;font-family:"Segoe UI",Tahoma,sans-serif;font-size:14px;color:#201f1e;background:#faf9f8;}
+.ust h1{margin:0;font-size:18px;color:#005a9e;}
+.ust .alt{margin:2px 0 12px;font-size:12px;color:#605e5c;}
+
+.durum{padding:8px 10px;border-radius:2px;font-size:13px;margin-bottom:12px;}
+.durum.bekle{background:#fff4ce;border-left:3px solid #d29200;}
+.durum.tamam{background:#dff6dd;border-left:3px solid #107c10;}
+.durum.hata{background:#fde7e9;border-left:3px solid #a4262c;}
+
+.kart{background:#fff;border:1px solid #edebe9;border-radius:2px;padding:10px 12px;}
+.kart h2{margin:0 0 8px;font-size:14px;color:#323130;}
+/* Yardimci sinif: display belirleyen baska bir sinifla birlikte kullanilirsa
+   (ornek: class="yukleme gizli") ayni ozgulluk yuzunden SONRA gelen kural kazanir
+   ve oge gizlenmez. Bu yuzden !important zorunlu. */
+.gizli{display:none !important;}
+dl{margin:0;}
+dt{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:#605e5c;margin-top:8px;}
+dd{margin:2px 0 0;font-family:Consolas,"Courier New",monospace;font-size:13px;word-break:break-word;}
+
+/* Pasif kontroller - sessiz, tek satir, hicbir sey ziplamaz. */
+.not{margin:8px 0 0;font-size:12px;line-height:1.45;word-break:break-word;}
+.not.amber{color:#8a6100;background:#fff9ec;border-left:3px solid #d29200;padding:5px 8px;}
+.not.sessiz{color:#605e5c;border-left:3px solid #edebe9;padding:5px 8px;}
+
+.eylem{margin:12px 0 0;}
+.dugme{display:block;width:100%;box-sizing:border-box;padding:9px 12px;font-family:inherit;font-size:14px;color:#fff;background:#005a9e;border:1px solid #005a9e;border-radius:2px;cursor:pointer;}
+.dugme:hover{background:#106ebe;border-color:#106ebe;}
+.dugme:active{background:#004578;border-color:#004578;}
+.dugme[disabled]{background:#f3f2f1;border-color:#edebe9;color:#a19f9d;cursor:default;}
+.ipucu{margin:5px 0 0;font-size:11px;color:#605e5c;}
+
+.yukleme{display:block;margin:12px 0 0;padding:8px 10px;background:#f3f2f1;border-left:3px solid #005a9e;font-size:13px;color:#323130;}
+.donen{display:inline-block;width:10px;height:10px;margin-right:7px;vertical-align:-1px;border:2px solid #c7e0f4;border-top-color:#005a9e;border-radius:50%;animation:don 900ms linear infinite;}
+@keyframes don{to{transform:rotate(360deg);}}
+
+.etiketler{margin:12px 0 8px;}
+.etiket{display:inline-block;margin:0 6px 6px 0;padding:2px 8px;border-radius:10px;font-size:11px;line-height:18px;border:1px solid #edebe9;background:#fff;color:#323130;}
+.etiket.onc-dusuk{background:#dff6dd;border-color:#bdedbb;color:#0b5a0b;}
+.etiket.onc-orta{background:#fff4ce;border-color:#f2d98d;color:#795000;}
+.etiket.onc-yuksek{background:#fde7e9;border-color:#f3c3c8;color:#8a2027;}
+.etiket.evet{background:#deecf9;border-color:#c7e0f4;color:#004578;}
+.etiket.hayir{background:#f3f2f1;border-color:#edebe9;color:#605e5c;}
+.etiket.onbellek{background:#f3f2f1;border-color:#edebe9;color:#605e5c;font-style:italic;}
+
+.sekmeler{display:block;border-bottom:1px solid #edebe9;}
+.sekme{display:inline-block;padding:7px 10px;margin:0 2px -1px 0;font-family:inherit;font-size:13px;color:#605e5c;background:transparent;border:0;border-bottom:2px solid transparent;cursor:pointer;}
+.sekme:hover{color:#323130;}
+.sekme.etkin{color:#005a9e;border-bottom-color:#005a9e;font-weight:600;}
+
+.panelKap{border-top:0;min-height:96px;}
+.metin{margin:0;font-size:13px;line-height:1.55;white-space:pre-wrap;word-break:break-word;}
+.liste{margin:0;padding-left:18px;}
+.liste li{font-size:13px;line-height:1.5;margin-bottom:7px;word-break:break-word;}
+.bos{margin:0;font-size:12px;color:#605e5c;}
+
+.dip{margin-top:14px;border-top:1px solid #edebe9;padding-top:8px;}
+.dip p{margin:0;font-size:11px;color:#605e5c;line-height:1.5;}
+
+/* ===================== Faz 3 - yazma kipi ===================== */
+/* Okuma kipinin hicbir kurali degismedi; asagidakiler yalniz yazma kipinde
+   gorunen ogeler icindir (#yazmaAlani varsayilan olarak .gizli'dir). */
+
+.grup{margin-top:12px;}
+.grup h2{margin:0 0 4px;}
+.grup .ipucu{margin:0 0 8px;}
+
+/* Ton / dil dugmeleri: dar panelde yan yana, tasarsa alt satira iner. */
+.dugmeSirasi{margin:0;font-size:0;}
+.dugme.kucuk{display:inline-block;width:auto;margin:0 6px 6px 0;padding:6px 12px;font-size:13px;}
+.dugmeSirasi .dugme.kucuk:last-child{margin-right:0;}
+
+/* Uretilen metin: salt okunur. Buraya yazmak maili degistirmez;
+   maile yazan tek yol "Gövdeye ekle" dugmesidir. */
+.taslakKutu{display:block;width:100%;box-sizing:border-box;margin:0 0 8px;padding:8px;
+  font-family:Consolas,"Courier New",monospace;font-size:12.5px;line-height:1.5;color:#323130;
+  background:#faf9f8;border:1px solid #edebe9;border-radius:2px;resize:vertical;white-space:pre-wrap;}
+.taslakKutu:focus{outline:2px solid #c7e0f4;outline-offset:-2px;}
+
+.altBaslik{margin:12px 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:#8a6100;}
+.altBaslik.sakin{color:#605e5c;}
+
+/* Cevapsiz maddeler: baskin, mevcut amber uyari diliyle ayni. */
+.liste.onemli{list-style:none;margin:0;padding:0;}
+.liste.onemli li{margin:0 0 6px;padding:6px 8px;font-size:13px;line-height:1.5;
+  color:#8a6100;background:#fff9ec;border-left:3px solid #d29200;word-break:break-word;}
+
+/* Cevaplananlar: sessiz, gri, geri planda. */
+.liste.sakinListe{list-style:disc;margin:0;padding-left:18px;}
+.liste.sakinListe li{margin-bottom:5px;font-size:12px;line-height:1.45;color:#605e5c;word-break:break-word;}
+
+/* ===================== §5.7 kapatma hakki ===================== */
+.kapatAlani{margin-top:14px;text-align:right;}
+.baglanti{padding:0;font-family:inherit;font-size:12px;color:#605e5c;background:transparent;border:0;text-decoration:underline;cursor:pointer;}
+.baglanti:hover{color:#a4262c;}

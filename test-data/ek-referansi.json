@@ -1,0 +1,29 @@
+{
+  "id": "ek-referansi",
+  "senaryo": "Gövdede birden çok kez eke atıf yapılmasına rağmen mesajda hiç ek bulunmaması; unutulmuş ek tespiti testi.",
+  "beklenen": {
+    "dil": "karisik",
+    "kategori": "eksik-ek-uyarisi",
+    "oncelik": "orta"
+  },
+  "konu": "Üçüncü çeyrek performans raporu ve fiyat listesi",
+  "ekler": [],
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [{ "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-18T14:10:00+03:00",
+      "govde": "Ayşe Hanım merhaba,\n\nTalep ettiğiniz üçüncü çeyrek performans raporunu ve 2027 dönemine ait güncel fiyat listesini ekte gönderiyorum.\n\nRaporun ikinci sayfasında zamanında teslim oranlarını ay ay görebilirsiniz; ağustostaki düşüşün sebebini de dipnotta açıkladım. Fiyat listesinde ise ekteki tabloda sarı ile işaretlediğim kalemler önümüzdeki dönem için revize edilen kalemlerdir.\n\nPlease find the signed service agreement attached as well; imzalı nüshayı da aynı dosyanın içine koydum.\n\nİncelemeniz sonrası görüşlerinizi bekliyorum.\n\nSaygılarımla,\nGülnur Özdemir\nMüşteri İlişkileri | Yıldız Lojistik A.Ş."
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-18T15:02:00+03:00",
+      "govde": "Gülnur Hanım,\n\nMesajınızda ek göremiyorum, sanırım dosyaları eklemeyi unutmuşsunuz. Tekrar gönderebilir misiniz?\n\nAyşe"
+    }
+  ]
+}

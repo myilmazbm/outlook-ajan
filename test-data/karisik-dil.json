@@ -1,0 +1,60 @@
+{
+  "id": "karisik-dil",
+  "senaryo": "Yurt dışı tedarikçiyle yürüyen, aynı zincirde Türkçe ve İngilizce mesajların ve cümle içi dil geçişlerinin bulunduğu yazışma.",
+  "beklenen": {
+    "dil": "karisik",
+    "kategori": "tedarikci-koordinasyonu",
+    "oncelik": "orta"
+  },
+  "konu": "RE: Order NW-88214 / Yedek parça teslim planı",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Ingrid Vahlberg", "eposta": "ingrid.vahlberg@nordwindkomp.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-14T09:10:00+03:00",
+      "govde": "Dear Ingrid,\n\nWe have not yet received the revised delivery schedule for order NW-88214. Our production planning meeting is on Thursday, so we would need the dates before Wednesday evening.\n\nAlso, could you confirm whether the conveyor bearings are shipped from the same warehouse as the previous batch?\n\nBest regards,\nBurak Şentürk\nProcurement Specialist | Yıldız Lojistik A.Ş."
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Ingrid Vahlberg", "eposta": "ingrid.vahlberg@nordwindkomp.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-14T13:32:00+03:00",
+      "govde": "Hello Burak,\n\nApologies for the delay. The revised schedule is as follows:\n\n- Position 1-4 (bearings): ready for pickup on 21 September\n- Position 5 (control unit): 2 weeks later, our supplier had a quality hold\n\nThe bearings ship from our Bremen hub, the control unit from a different site, so there will be two separate consignments. Please confirm if this is acceptable for your customs process.\n\nKind regards,\nIngrid Vahlberg\nNordwind Komponenten GmbH"
+    },
+    {
+      "sira": 3,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-14T14:05:00+03:00",
+      "govde": "Burak,\n\nİki ayrı consignment bizim için sıkıntı, iki ayrı beyanname iki ayrı masraf demek. Kontrol ünitesi iki hafta sonra geliyorsa bearing'leri de bekletip tek sevkiyat yapmak daha mantıklı olabilir mi, bir hesapla.\n\nAma üretim planı 21 Eylül'e göre kuruluysa bekletmek de olmaz. Sen bir bak, karar senin.\n\nSelin"
+    },
+    {
+      "sira": 4,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-14T15:20:00+03:00",
+      "govde": "Selin,\n\nHesapladım: ikinci beyanname ve ek elleçleme yaklaşık 480 avro ek maliyet. Ama bearing'leri iki hafta bekletirsek hat 15 Ekim'e kadar yedeksiz kalıyor, o riski almayalım derim.\n\nIngrid'e partial shipment'ı onaylıyorum diye yazacağım. Uygun mu?\n\nBurak"
+    },
+    {
+      "sira": 5,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Ingrid Vahlberg", "eposta": "ingrid.vahlberg@nordwindkomp.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-15T08:45:00+03:00",
+      "govde": "Dear Ingrid,\n\nWe confirm the split shipment. Please proceed with positions 1-4 on 21 September as planned.\n\nTwo requests:\n1) Please send the commercial invoice and the movement certificate at least three working days before pickup. Belgeler eksik gelirse gümrükte sarı hatta düşüyoruz, geçen sefer bu yüzden sekiz gün kaybettik.\n2) For the control unit, we need a firm date by 30 September at the latest.\n\nThank you,\nBurak"
+    },
+    {
+      "sira": 6,
+      "kimden": { "ad": "Ingrid Vahlberg", "eposta": "ingrid.vahlberg@nordwindkomp.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-15T16:12:00+03:00",
+      "govde": "Hi Burak,\n\nNoted and agreed on both points. Documents will be issued on 17 September and sent by courier the same day. I will chase our supplier for the control unit date and come back to you before 30 September.\n\nTesekkurler ve iyi calismalar (I am still practising my Turkish!).\n\nIngrid"
+    }
+  ]
+}

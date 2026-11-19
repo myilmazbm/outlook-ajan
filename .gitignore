@@ -1,0 +1,19 @@
+openrouter-key.txt
+litellm-key.txt
+*-key.txt
+
+node_modules/
+dist/
+.env
+*.log
+
+scratch/
+
+# lab kimlik bilgileri asla depoya girmez
+lab-creds*
+*.env
+tools/owa-probe/node_modules/
+tools/owa-probe/fail-*
+
+# yayin kopyasi icin gercek ad -> yer tutucu tablosu
+tools/yayin-gizli.json

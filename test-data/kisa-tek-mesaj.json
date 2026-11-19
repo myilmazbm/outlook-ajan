@@ -1,0 +1,20 @@
+{
+  "id": "kisa-tek-mesaj",
+  "senaryo": "Tek mesajlık, kısa ve tek bir net talep içeren sade bir e-posta; özetleme ve aksiyon çıkarımının gereksiz şişirme yapmaması beklenir.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "bilgi-talebi",
+    "oncelik": "orta"
+  },
+  "konu": "Ağustos ayı depo doluluk raporu",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" },
+      "kime": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-11T08:05:00+03:00",
+      "govde": "Deniz merhaba,\n\nAğustos ayına ait depo doluluk raporunu yarın öğlene kadar bana iletebilir misin? Yönetim kurulu sunumunda kullanacağım.\n\nTeşekkürler,\nKerem"
+    }
+  ]
+}

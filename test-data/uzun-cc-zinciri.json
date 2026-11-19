@@ -1,0 +1,426 @@
+{
+  "id": "uzun-cc-zinciri",
+  "senaryo": "Gecikmiş bir konteyner sevkiyatı etrafında 40 mesajlık, kalabalık CC'li, alıntı gürültüsü yoğun ve tarafların birbirini dinlemediği uzun bir yazışma zinciri.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "sevkiyat-gecikmesi",
+    "oncelik": "yuksek"
+  },
+  "konu": "RE: [ILN-2026-4471] Sevkiyat gecikmesi ve revize teslim planı",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [{ "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" }],
+      "tarih": "2026-09-10T09:12:00+03:00",
+      "govde": "Merhaba Gülnur Hanım,\n\nILN-2026-4471 numaralı sevkiyatın 8 Eylül'de depomuzda olması gerekiyordu. Bugün 10 Eylül ve elimize ne mal ne de bir bilgilendirme ulaştı.\n\nÜretim planımızı bu partiye göre kurguladık, önümüzdeki hafta üç vardiya birden bu malzemeye bağlı. Sevkiyatın şu anda tam olarak nerede olduğunu ve güncel teslim tarihini bugün içinde öğrenebilir miyiz?\n\nİyi çalışmalar,\nAyşe Çetinkaya\nTedarik Zinciri Sorumlusu | Mavi Deniz Tekstil"
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "tarih": "2026-09-10T09:41:00+03:00",
+      "govde": "Selin, Deniz merhaba,\n\nMüşteriden aşağıdaki mail geldi. 4471 nerede? Bende son bilgi 5 Eylül'de gemiye yüklendiği yönünde, ondan sonrası boş.\n\nBugün akşama kadar müşteriye bir tarih vermem lazım, elimde hiçbir şey yok.\n\nGülnur\n\n-----Orijinal Mesaj-----\n> ILN-2026-4471 numaralı sevkiyatın 8 Eylül'de depomuzda olması gerekiyordu.\n> Bugün 10 Eylül ve elimize ne mal ne de bir bilgilendirme ulaştı."
+    },
+    {
+      "sira": 3,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T10:05:00+03:00",
+      "govde": "Merhaba,\n\nKonteyner 7 Eylül'de limana indi ama hâlâ gümrük sahasında bekliyor. Bizim tarafta bir sorun yok, depo hazır, gelen malı aynı gün içinde indiririz.\n\nGümrük tarafını Burak takip ediyordu sanırım.\n\nDeniz"
+    },
+    {
+      "sira": 4,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T10:33:00+03:00",
+      "govde": "Deniz, gümrüğü ben takip etmiyorum, müşavirlik firması takip ediyor.\n\nAsıl mesele şu: tedarikçi partiyi bize taahhüt ettiği tarihten üç gün sonra teslim etti. Yani zincirin en başında zaten üç günlük bir kayıp var. Bunu ben 28 Ağustos'ta yazmıştım.\n\nBurak Şentürk\nSatınalma Uzmanı\n\n> Konteyner 7 Eylül'de limana indi ama hâlâ gümrük sahasında bekliyor.\n> Bizim tarafta bir sorun yok, depo hazır."
+    },
+    {
+      "sira": 5,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" }],
+      "tarih": "2026-09-10T11:02:00+03:00",
+      "govde": "Herkese merhaba,\n\nKimin ne zaman ne yazdığını tartışmayı bırakalım, müşteriye bir tarih vermemiz gerekiyor.\n\nFatma Hanım'ı da CC'ye alıyorum. Fatma Hanım, ILN-2026-4471 konteynerinin gümrük durumunu paylaşabilir misiniz? Bekleme sebebi nedir?\n\nSelin Aydın\nOperasyon Müdürü | Yıldız Lojistik A.Ş."
+    },
+    {
+      "sira": 6,
+      "kimden": { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T11:20:00+03:00",
+      "govde": "Selin,\n\nBu konteynerin faturası ay sonu kapanışına girecek mi girmeyecek mi? Muhasebe bana sordu, ben de sana soruyorum. Eğer eylül ayına sarkarsa gelir tahakkuku tarafında düzeltme yapmam gerekiyor.\n\nEmre"
+    },
+    {
+      "sira": 7,
+      "kimden": { "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T12:47:00+03:00",
+      "govde": "Selin Hanım merhaba,\n\nBeyanname açıldı ancak dosyada A.TR dolaşım belgesi eksik göründüğü için işlem sarı hatta düştü. Belge orijinali elimize ulaşmadan tescil tamamlanamıyor.\n\nBelgeyi gönderen tarafla temasa geçerseniz süreci hızlandırabiliriz.\n\nSaygılarımla,\nFatma Uğurlu\nRota Gümrük Müşavirliği"
+    },
+    {
+      "sira": 8,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" }],
+      "cc": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Tolga Erkan", "eposta": "tolga.erkan@kuzeymetal.example" }
+      ],
+      "tarih": "2026-09-10T13:15:00+03:00",
+      "govde": "Fatma Hanım,\n\nA.TR'yi ben 2 Eylül'de kurye ile gönderdim. Kurye takip numarası bende kayıtlı. Sizin dosyanızda görünmüyorsa büyük ihtimalle yanlış şubeye teslim edilmiştir.\n\nTolga Bey'i de CC'ye alıyorum, belgeyi düzenleyen taraf kendisi.\n\nBurak\n\n> Beyanname açıldı ancak dosyada A.TR dolaşım belgesi eksik göründüğü için\n> işlem sarı hatta düştü."
+    },
+    {
+      "sira": 9,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "tarih": "2026-09-10T14:02:00+03:00",
+      "govde": "Selin,\n\nAyrıca şunu da hatırlatayım: 17 Eylül'den itibaren depoda B blok raf yenileme çalışması başlıyor. O tarihten sonra gelen paletleri geçici sahaya almak zorunda kalırız, bu da sevkiyat hızını düşürür.\n\nMümkünse mal 16 Eylül akşamına kadar depoda olsun.\n\nDeniz"
+    },
+    {
+      "sira": 10,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "tarih": "2026-09-10T14:30:00+03:00",
+      "govde": "Arkadaşlar, ben hâlâ müşteriye söyleyecek bir tarih bekliyorum.\n\nA.TR, sarı hat, raf yenileme... Bunların hiçbirini müşteriye anlatamam. Bana tek bir cümle lazım: mal hangi gün onların deposunda olacak?\n\nGülnur"
+    },
+    {
+      "sira": 11,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T15:10:00+03:00",
+      "govde": "Gülnur,\n\nA.TR bugün yarın çözülürse gümrükten 14 Eylül'de çıkar, 15'inde depoya alırız, 16 Eylül'de müşteriye teslim ederiz. Müşteriye 16 Eylül diyebilirsin ama kesin taahhüt olarak değil, revize plan olarak ilet.\n\nSelin"
+    },
+    {
+      "sira": 12,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [{ "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" }],
+      "cc": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" }
+      ],
+      "tarih": "2026-09-10T15:44:00+03:00",
+      "govde": "Ayşe Hanım merhaba,\n\nGecikme için öncelikle özür dileriz. Konteyner limana indi, şu anda gümrük işlemleri devam ediyor. Revize planımıza göre malzemeyi 16 Eylül Çarşamba günü deponuza teslim etmeyi öngörüyoruz.\n\nSüreçteki her adımı sizinle paylaşacağım.\n\nSaygılarımla,\nGülnur Özdemir"
+    },
+    {
+      "sira": 13,
+      "kimden": { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" },
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T16:20:00+03:00",
+      "govde": "Gülnur Hanım,\n\n16 Eylül bizim için sekiz iş günü gecikme demek. Bu tarih üretim planımızı tamamen bozuyor ve açıkçası kabul edilebilir değil.\n\nSözleşmemizde gecikme cezası maddesi var, konuyu satınalma müdürümüz Murat Bey'e aktarıyorum.\n\nAyşe Çetinkaya"
+    },
+    {
+      "sira": 14,
+      "kimden": { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-10T17:05:00+03:00",
+      "govde": "Selin Hanım,\n\nÇerçeve sözleşmemizin 7.3 maddesi gereği, taahhüt edilen teslim tarihini aşan her takvim günü için sipariş bedelinin binde ikisi oranında gecikme bedeli uygulanır. 16 Eylül teslimi bu maddeyi devreye sokar.\n\nCezayı işletmeyi tercih etmeyiz, çözüm önerisi bekliyoruz.\n\nMurat Yavuzer\nSatınalma Müdürü | Mavi Deniz Tekstil\n\n> Revize planımıza göre malzemeyi 16 Eylül Çarşamba günü deponuza teslim\n> etmeyi öngörüyoruz."
+    },
+    {
+      "sira": 15,
+      "kimden": { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "tarih": "2026-09-11T08:48:00+03:00",
+      "govde": "Selin,\n\nKabaca hesapladım: sipariş bedeli üzerinden günlük binde iki, sekiz gün için toplam bedelin yüzde 1,6'sına denk geliyor. Bu rakam bu çeyrekteki marjımızı tek başına eritir.\n\nAyrıca dünkü soruma hâlâ cevap alamadım: fatura eylül kapanışına giriyor mu?\n\nEmre"
+    },
+    {
+      "sira": 16,
+      "kimden": { "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "cc": [
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-11T09:15:00+03:00",
+      "govde": "Arkadaşlar,\n\nBu zinciri sabah baştan sona okudum ve açıkçası hiçbir şey anlamadım. Otuz mail olmuş, ortada net bir sahip yok.\n\nBugün saat 14:00'e kadar bana yarım sayfayı geçmeyen bir özet istiyorum: sorun nedir, kimin elinde beklemektedir, hangi tarihte kapanacaktır, müşteriye ne taahhüt edilmiştir.\n\nKerem Doğanay\nGenel Müdür Yardımcısı"
+    },
+    {
+      "sira": 17,
+      "kimden": { "ad": "Tolga Erkan", "eposta": "tolga.erkan@kuzeymetal.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [{ "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" }],
+      "tarih": "2026-09-11T09:52:00+03:00",
+      "govde": "Burak Bey merhaba,\n\nBizim tarafımızda gecikme yok. Parti 30 Ağustos'ta hazırdı, yükleme talimatını sizden 2 Eylül'de aldık. Aradaki üç gün bizim değil, sizin taşıma organizasyonunuzdan kaynaklanıyor.\n\nA.TR'nin bir nüshasını bugün tekrar düzenleyip kargoya veriyorum.\n\nTolga Erkan\nKuzey Metal Sanayi"
+    },
+    {
+      "sira": 18,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Tolga Erkan", "eposta": "tolga.erkan@kuzeymetal.example" }],
+      "cc": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" }
+      ],
+      "tarih": "2026-09-11T10:18:00+03:00",
+      "govde": "Tolga Bey,\n\nYükleme talimatını 2 Eylül'de aldığınız doğru değil, talimat 28 Ağustos'ta sisteme girildi. Kayıtları kontrol ederim, gerekirse ekran görüntüsünü paylaşırım.\n\nŞu an önceliğimiz belge, tartışmayı sonraya bırakalım. Yeni A.TR'yi doğrudan Fatma Hanım'ın adresine göndermenizi rica ediyorum.\n\nBurak"
+    },
+    {
+      "sira": 19,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-11T10:40:00+03:00",
+      "govde": "Burak, benim 17 Eylül raf yenileme uyarımı gören oldu mu? Kimse cevap vermedi.\n\nDeniz"
+    },
+    {
+      "sira": 20,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [{ "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-11T13:35:00+03:00",
+      "govde": "Kerem Bey,\n\nÖzet:\n\nSorun: ILN-2026-4471 konteyneri gümrükte sarı hatta takılı, sebep eksik A.TR belgesi.\nKimde bekliyor: Belgenin yeni nüshasını tedarikçi bugün kargoya verdi, gümrük müşavirliği bekliyor.\nBeklenen kapanış: Belge 12 Eylül'de ulaşırsa tescil 14 Eylül, teslim 16 Eylül.\nMüşteriye taahhüt: 16 Eylül revize plan olarak iletildi, müşteri kabul etmedi ve gecikme cezası maddesini hatırlattı.\n\nSahibi benim, günlük takip bende.\n\nSelin"
+    },
+    {
+      "sira": 21,
+      "kimden": { "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }],
+      "tarih": "2026-09-11T14:02:00+03:00",
+      "govde": "Teşekkürler, ilk kez net bir şey okudum.\n\nCeza maddesi devreye girerse bana önceden haber verin, müşterinin genel müdürüyle ben konuşurum. Kısmi teslimat seçeneğini de değerlendirin.\n\nKerem"
+    },
+    {
+      "sira": 22,
+      "kimden": { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" }],
+      "tarih": "2026-09-11T14:30:00+03:00",
+      "govde": "Üçüncü kez soruyorum: fatura eylül kapanışına giriyor mu?\n\nCevap alamazsam kapanışı mevcut varsayımla yaparım, sonra düzeltme talebiyle gelmeyin lütfen.\n\nEmre"
+    },
+    {
+      "sira": 23,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [{ "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-11T14:41:00+03:00",
+      "govde": "Emre, teslim 16 Eylül'de gerçekleşirse fatura eylül kapanışına girer. Kısmi teslimat olursa iki ayrı faturaya bölünür. Kesinleşince ilk sana yazacağım.\n\nSelin"
+    },
+    {
+      "sira": 24,
+      "kimden": { "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-12T09:25:00+03:00",
+      "govde": "Burak Bey günaydın,\n\nA.TR bu sabah elimize ulaştı, teşekkür ederiz. Ancak yeni bir sorun çıktı: belgedeki kıymet ile ticari faturadaki tutar arasında 1.240 avroluk fark var. Bu farkla tescil yapamayız, düzeltilmiş fatura gerekiyor.\n\nFatma Uğurlu"
+    },
+    {
+      "sira": 25,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [{ "ad": "Tolga Erkan", "eposta": "tolga.erkan@kuzeymetal.example" }],
+      "cc": [
+        { "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" },
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-12T09:50:00+03:00",
+      "govde": "Tolga Bey,\n\nA.TR ile ticari fatura tutarı uyuşmuyor, aradaki fark 1.240 avro. Muhtemelen navlun kalemi birinde var diğerinde yok.\n\nDüzeltilmiş faturayı bugün öğlene kadar gönderebilir misiniz? Her geçen saat bize gecikme cezası olarak geri dönüyor.\n\nBurak\n\n> Belgedeki kıymet ile ticari faturadaki tutar arasında 1.240 avroluk fark var."
+    },
+    {
+      "sira": 26,
+      "kimden": { "ad": "Tolga Erkan", "eposta": "tolga.erkan@kuzeymetal.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [{ "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" }],
+      "tarih": "2026-09-12T11:40:00+03:00",
+      "govde": "Burak Bey,\n\nFark navlundan değil, ikinci partideki 40 kalemin sehven bu faturaya eklenmesinden kaynaklanıyor. O kalemler ILN-2026-4482 siparişine ait.\n\nDüzeltilmiş faturayı hazırlıyoruz, bugün 16:00 gibi gönderirim.\n\nTolga Erkan"
+    },
+    {
+      "sira": 27,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "tarih": "2026-09-12T12:05:00+03:00",
+      "govde": "Bir dakika, şimdi 4482 mi girdi işin içine? Müşteri bana 4471'i soruyor.\n\nİki sipariş birbirine karıştı mı, yoksa ayrı ayrı mı ilerliyorlar? Müşteriye yanlış bilgi vermek istemiyorum.\n\nGülnur"
+    },
+    {
+      "sira": 28,
+      "kimden": { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-12T13:10:00+03:00",
+      "govde": "Gülnur Hanım,\n\nAradan bir gün geçti, bizde hâlâ bir gelişme bilgisi yok. Ayrıca bugün başka bir kanaldan 4482 numaralı siparişin de ertelendiğini duyduk. Bu doğru mu?\n\nİki siparişin de durumunu tek bir tabloda görmek istiyoruz.\n\nMurat Yavuzer"
+    },
+    {
+      "sira": 29,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "tarih": "2026-09-12T13:35:00+03:00",
+      "govde": "Netleştirelim, iki sipariş ayrıdır:\n\n4471: gümrükte, düzeltilmiş fatura bekleniyor, hedef teslim 16 Eylül.\n4482: henüz sevk edilmedi, tedarikçide üretimi tamamlandı, planlanan çıkış 22 Eylül.\n\nGülnur, müşteriye bu iki satırı aynen ilet. 4482'yi bu zincirde tartışmayalım, ayrı bir konu açalım.\n\nSelin"
+    },
+    {
+      "sira": 30,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "tarih": "2026-09-12T14:20:00+03:00",
+      "govde": "Selin, dördüncü kez yazıyorum: 17 Eylül'de B blok kapanıyor. 4482 eğer 22 Eylül'de çıkarsa o parti geçici sahaya girer ve elleçleme maliyeti artar.\n\nBunu şimdiden planlamazsak aynı filmi bir ay sonra tekrar izleriz.\n\nDeniz"
+    },
+    {
+      "sira": 31,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" }
+      ],
+      "cc": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "tarih": "2026-09-12T16:48:00+03:00",
+      "govde": "Düzeltilmiş fatura geldi, Fatma Hanım'a ilettim. Tutarlar artık A.TR ile birebir uyuşuyor.\n\nFatma Hanım, tescili pazartesi sabah ilk iş olarak açabilir misiniz?\n\nBurak"
+    },
+    {
+      "sira": 32,
+      "kimden": { "ad": "Fatma Uğurlu", "eposta": "fatma.ugurlu@rotagumruk.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "tarih": "2026-09-14T09:08:00+03:00",
+      "govde": "Günaydın,\n\nTescil tamamlandı, eşya sarı hattan çıktı. Muayene talebi gelmedi. Konteyner bugün öğleden sonra limandan çekilebilir durumda.\n\nÖrdino için nakliyeciye bilgi verdim.\n\nFatma Uğurlu"
+    },
+    {
+      "sira": 33,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+        { "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-14T09:30:00+03:00",
+      "govde": "Konteyner çıktı. Deniz, bugün akşam depoya giriş yapacak, ekibi hazırla.\n\nGülnur, müşteriye 15 Eylül sabahı teslim edebileceğimizi yaz. Bir gün öne çekmiş olduk, bunu da vurgula.\n\nSelin"
+    },
+    {
+      "sira": 34,
+      "kimden": { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+      "kime": [{ "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" }],
+      "cc": [
+        { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" },
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-14T10:02:00+03:00",
+      "govde": "Ayşe Hanım, Murat Bey,\n\nİyi haber: gümrük işlemleri tamamlandı, konteyner bugün depomuza giriyor. Teslimatı 16 Eylül yerine 15 Eylül Salı sabahı gerçekleştireceğiz.\n\nAraç 08:00-10:00 arasında sahanızda olacak. Kabul için uygun musunuz?\n\nGülnur Özdemir"
+    },
+    {
+      "sira": 35,
+      "kimden": { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [{ "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" }],
+      "tarih": "2026-09-14T11:15:00+03:00",
+      "govde": "Gülnur Hanım,\n\n15 Eylül sabahı uygundur, mal kabul ekibimiz hazır olacak.\n\nBir ricamız var: yüklemeyi kalem bazında ayrıştırıp, boyahane grubunu ilk indirilecek şekilde konumlandırabilir misiniz? O grubu aynı gün üretime alacağız.\n\nAyşe Çetinkaya"
+    },
+    {
+      "sira": 36,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "tarih": "2026-09-14T17:50:00+03:00",
+      "govde": "Konteyner depoya girdi, 214 koli sayıldı. İrsaliyede 216 koli yazıyor, iki koli eksik görünüyor.\n\nSayımı yarın sabah tekrar yaptıracağım ama şimdiden haberiniz olsun.\n\nDeniz"
+    },
+    {
+      "sira": 37,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [{ "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-14T18:10:00+03:00",
+      "govde": "Deniz, sayımı sabah 07:00'de bitir ki araç 07:30'da yola çıkabilsin.\n\nİki koli gerçekten eksikse müşteriye teslimattan önce haber veririz, sonradan öğrenmelerinden iyidir. Burak, tedarikçiye paralel bir kayıp bildirimi aç.\n\nSelin"
+    },
+    {
+      "sira": 38,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "tarih": "2026-09-15T07:22:00+03:00",
+      "govde": "Sayım bitti, iki koli konteynerin arka duvarında sıkışmış, eksik yok. 216 koli tam.\n\nAraç 07:35'te yola çıktı.\n\nDeniz"
+    },
+    {
+      "sira": 39,
+      "kimden": { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+      "kime": [{ "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" },
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-15T11:40:00+03:00",
+      "govde": "Gülnur Hanım,\n\nMal 09:20'de ulaştı, teşekkür ederiz. Ancak mal kabulde 12 kolinin köşelerinin ezildiğini ve 3 kolide içerik ıslaklığı olduğunu tespit ettik.\n\nFotoğrafları çektik, hasar tutanağı tutuldu. Bu 3 koliyi üretime alamayız, yerine gelecek malzeme için tarih rica ediyoruz.\n\nAyrıca gecikme bedeli konusundaki talebimiz halen geçerli, Murat Bey ayrıca yazacak.\n\nAyşe Çetinkaya"
+    },
+    {
+      "sira": 40,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Ayşe Çetinkaya", "eposta": "ayse.cetinkaya@mavidenizteks.example" },
+        { "ad": "Murat Yavuzer", "eposta": "murat.yavuzer@mavidenizteks.example" }
+      ],
+      "cc": [
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-15T14:05:00+03:00",
+      "govde": "Ayşe Hanım, Murat Bey,\n\nHasar tutanağını aldık, süreci şu şekilde kapatmayı öneriyoruz:\n\n1. Islanan 3 kolinin muadili stokumuzdan 17 Eylül Perşembe sabahı ücretsiz olarak sevk edilecek, takibi Deniz Korkmaz'da.\n2. Ezik 12 koli için kalite kontrol raporunuzu bekliyoruz, kullanılabilir çıkarsa bedelinde düzeltme yaparız; takibi Gülnur Özdemir'de.\n3. Gecikme bedeli talebinizi ticari ekibimize ilettik, Kerem Bey bu hafta içinde sizinle doğrudan görüşecek.\n4. Sürecin tekrarını önlemek için belge akışını tedarikçiden doğrudan müşavirliğe çeviriyoruz, 30 Eylül'e kadar devreye alınacak, takibi Burak Şentürk'te.\n\nYaşadığınız aksaklık için tekrar özür diliyor, ilginiz için teşekkür ediyoruz.\n\nSaygılarımla,\nSelin Aydın\nOperasyon Müdürü | Yıldız Lojistik A.Ş."
+    }
+  ]
+}

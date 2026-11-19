@@ -1,0 +1,6 @@
+Write a reply to the email above.
+Tone requested: {TON}
+  - "kisa"    => brief and direct; a few sentences at most.
+  - "detayli" => cover each point raised in the email, point by point.
+  - "resmi"   => formal register, careful courtesy, no contractions or slang.
+Return only the reply body text.

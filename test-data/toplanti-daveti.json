@@ -1,0 +1,61 @@
+{
+  "id": "toplanti-daveti",
+  "senaryo": "Tarih, saat, yer ve gündemin düz metin içinde geçtiği toplantı daveti ve sonrasında saat/yer değişikliği yapılan yazışma; takvim bilgisi çıkarımı testi.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "toplanti-daveti",
+    "oncelik": "orta"
+  },
+  "konu": "Çeyrek dönem operasyon değerlendirme toplantısı",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" }],
+      "tarih": "2026-09-14T16:30:00+03:00",
+      "govde": "Arkadaşlar merhaba,\n\nÇeyrek dönem operasyon değerlendirme toplantımızı 23 Eylül Çarşamba günü saat 10:00'da genel merkez üçüncü kattaki büyük toplantı salonunda yapıyoruz. Toplantının yaklaşık iki saat sürmesini bekliyorum, 12:00'de bitirmeyi hedefliyorum.\n\nGündem şu şekilde olacak:\n\nİlk olarak çeyreğin teslim performansını konuşacağız; zamanında teslim oranı, geciken sevkiyatların kök nedenleri ve müşteri şikâyetlerinin dağılımı. Bu bölümü Gülnur açacak.\n\nArdından depo tarafına geçeceğiz: doluluk oranları, B blok raf yenilemesinin operasyona etkisi ve elleçleme maliyetleri. Bu bölüm Deniz'de.\n\nÜçüncü başlık tedarikçi performansı ve yenilenecek sözleşmeler; Burak puanlama sonuçlarını ve yenileme takvimini sunacak.\n\nSon olarak Emre çeyrek maliyetlerini ve gelecek çeyrek bütçe revizyon önerisini paylaşacak.\n\nHerkesten ricam, kendi bölümüne ait slaytları en geç 22 Eylül Salı akşamına kadar bana göndersin ki tek dosyada birleştirelim.\n\nKatılamayacak olan varsa bugün bana yazsın.\n\nSelin Aydın\nOperasyon Müdürü | Yıldız Lojistik A.Ş."
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-14T17:12:00+03:00",
+      "govde": "Selin,\n\n23 Eylül sabahı bende bağımsız denetim görüşmesi var, 11:00'den önce çıkamam. Toplantıyı öğleden sonraya alma imkânımız var mı?\n\nOlmuyorsa benim bölümümü en sona bırakırsın, 11:30 gibi katılırım.\n\nEmre"
+    },
+    {
+      "sira": 3,
+      "kimden": { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+      "kime": [{ "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" }],
+      "cc": [],
+      "tarih": "2026-09-14T17:35:00+03:00",
+      "govde": "Selin, öğleden sonra benim için de daha uygun. Sabah mal kabul yoğunluğu oluyor.\n\nBir de not: büyük toplantı salonunda projeksiyon iki haftadır arızalı, IT'ye bilet açılmış ama hâlâ tamir edilmedi.\n\nDeniz"
+    },
+    {
+      "sira": 4,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Deniz Korkmaz", "eposta": "deniz.korkmaz@yildizlojistik.example" },
+        { "ad": "Gülnur Özdemir", "eposta": "gulnur.ozdemir@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "cc": [
+        { "ad": "Kerem Doğanay", "eposta": "kerem.doganay@yildizlojistik.example" },
+        { "ad": "Hakan Bilgin", "eposta": "hakan.bilgin@yildizlojistik.example" }
+      ],
+      "tarih": "2026-09-15T09:00:00+03:00",
+      "govde": "Arkadaşlar,\n\nToplantıyı güncelliyorum. Yeni zaman ve yer:\n\n23 Eylül Çarşamba, saat 14:00 - 16:00, ikinci kattaki eğitim salonu. Salon değişikliğinin sebebi büyük salondaki projeksiyon arızası; eğitim salonunda ekran çalışır durumda. Hakan'ı da CC'ye alıyorum, büyük salonun arızasını takip etmesi için.\n\nGündem aynen geçerli, sıralama da değişmiyor. Slaytlar için son tarih yine 22 Eylül Salı akşamı.\n\nUzaktan katılmak isteyenler için çevrimiçi bağlantıyı ayrıca takvim davetine ekleyeceğim.\n\nSelin"
+    }
+  ]
+}

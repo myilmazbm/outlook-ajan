@@ -1,0 +1,45 @@
+{
+  "id": "dis-alici",
+  "senaryo": "İç yazışma tonundaki hassas içeriğin bulunduğu zincirde harici bir danışmanlık firması temsilcisinin CC'de kalması; dış alıcı uyarısı testi.",
+  "beklenen": {
+    "dil": "tr",
+    "kategori": "gizlilik-uyarisi",
+    "oncelik": "yuksek"
+  },
+  "konu": "İç değerlendirme: tedarikçi puanlama sonuçları ve sözleşme stratejisi",
+  "mesajlar": [
+    {
+      "sira": 1,
+      "kimden": { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "cc": [{ "ad": "Nilüfer Aksoy", "eposta": "nilufer.aksoy@pusuladanismanlik.example" }],
+      "tarih": "2026-09-16T11:20:00+03:00",
+      "govde": "Selin, Emre,\n\nTedarikçi puanlama çalışmasını tamamladım. Sonuçlar iç kullanım içindir, dışarıyla paylaşılmamalıdır.\n\nKuzey Metal 100 üzerinden 58 aldı, teslim performansı çok düştü. Sözleşme yenilemesinde pazarlık gücümüz yüksek, hedefimiz en az yüzde yedi indirim olmalı. Alternatif tedarikçiyle ön görüşme yaptım, onlar zaten fiyatı yüzde on aşağıda veriyor ama kapasiteleri sınırlı; bunu Kuzey Metal'e söylemeyeceğiz tabii, sadece pazarlıkta koz olarak kullanacağız.\n\nİkinci konu: mevcut sözleşmedeki ceza maddesini bu dönem biz de karşı tarafa işletmeyi düşünüyoruz. Emre, geçmiş gecikmelerden doğan toplam alacağımızı çıkarabilir misin?\n\nBurak"
+    },
+    {
+      "sira": 2,
+      "kimden": { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" },
+      "kime": [{ "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" }],
+      "cc": [
+        { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+        { "ad": "Nilüfer Aksoy", "eposta": "nilufer.aksoy@pusuladanismanlik.example" }
+      ],
+      "tarih": "2026-09-16T12:05:00+03:00",
+      "govde": "Burak,\n\nRakamı çıkarırım. Ön bilgi olarak söyleyeyim, bu yılki gecikmelerden doğan teorik alacağımız yaklaşık 312 bin lira. Bunu tahsil etmeye kalkarsak ilişki biter, ben pazarlıkta indirim olarak yansıtmayı tercih ederim.\n\nBir de şunu hatırlatayım: bizim kendi nakit akışımız kasımda sıkışacak, o dönem peşin ödeme yapamayız. Karşı taraf bunu bilmesin.\n\nEmre"
+    },
+    {
+      "sira": 3,
+      "kimden": { "ad": "Selin Aydın", "eposta": "selin.aydin@yildizlojistik.example" },
+      "kime": [
+        { "ad": "Burak Şentürk", "eposta": "burak.senturk@yildizlojistik.example" },
+        { "ad": "Emre Taşkın", "eposta": "emre.taskin@yildizlojistik.example" }
+      ],
+      "cc": [],
+      "tarih": "2026-09-16T12:40:00+03:00",
+      "govde": "Arkadaşlar, durun.\n\nCC'de Nilüfer Hanım var, kendisi Pusula Danışmanlık'tan, yani şirket dışından. Son iki mailde pazarlık stratejimizi ve nakit akışı durumumuzu yazdık.\n\nBu konuyu yeni bir zincirde, yalnızca iç ekiple devam ettiriyoruz. Nilüfer Hanım, karışıklık için özür dileriz; bu yazışmayı dikkate almamanızı ve silmenizi rica ediyoruz.\n\nSelin"
+    }
+  ]
+}
